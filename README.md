@@ -6,20 +6,20 @@
 - import_File = 'Sales_table.xlsx'
 - df = pd.read_excel(import_File)
 - df.head()
----
+
   id	Order_Date	Region	Country	Item_type	Quantity	Price
 0	1	2011-04-04	Australia	Australia	Meat	4300	421.89
 1	2	2018-07-12	Asia	Tajikistan	Personal Care	4145	81.73
 2	3	2011-07-06	Saharan Africa	Mozambique	Cosmetics	6407	437.20
 3	4	2011-05-01	Central America	Panama	Personal Care	2810	81.73
 4	5	2013-11-15	North America	Canada	Fruits	2110	9.33
-Step 3 : Setting the connection parameters
-conn = psycopg2.connect(
-    host = 'localhost',
-    database ='customersdb',
-    user ='postgres',
-    password ='giles'
-)
+## Step 3 : Setting the connection parameters
+- conn = psycopg2.connect(
+    - host = 'localhost',
+    - database ='customersdb',
+    - user ='postgres',
+    - password ='giles'
+- )
 cursor = conn.cursor()
 Step 4 : Creating a table named Sales_table in PostgreSQL using an SQL query executed through Python. The table is defined within the Python script and is subsequently created in the connected PostgreSQL database."
 Table_query = """
