@@ -1,11 +1,11 @@
 # Step-by-Step Demonstration of Connecting Python to PostgresSQL Database
-Step 1 : Loading of Neccesary Libraries
-import pandas as pd
-import psycopg2
-Step 2 : Loading of DataFrame (Sales_table -an excel files)
-import_File = 'Sales_table.xlsx'
-df = pd.read_excel(import_File)
-df.head()
+## Step 1 : Loading of Neccesary Libraries
+- import pandas as pd
+- import psycopg2
+## Step 2 : Loading of DataFrame (Sales_table -an excel files)
+- import_File = 'Sales_table.xlsx'
+- df = pd.read_excel(import_File)
+- df.head()
 id	Order_Date	Region	Country	Item_type	Quantity	Price
 0	1	2011-04-04	Australia	Australia	Meat	4300	421.89
 1	2	2018-07-12	Asia	Tajikistan	Personal Care	4145	81.73
