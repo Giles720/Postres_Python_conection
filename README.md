@@ -4,7 +4,7 @@
 ```python
 import pandas as pd
 import psycopg2
-
+## Step 2: Loading the Excel File into a DataFrame (Sales_table.xlsx)
 import_File = 'Sales_table.xlsx'
 df = pd.read_excel(import_File)
 df.head()
